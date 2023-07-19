@@ -111,6 +111,7 @@ main {
 
 .main-head {
   /* border: 1px solid white; */
+  position: relative;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
   background-image: url("./assets/background.webp");
@@ -125,7 +126,7 @@ main {
   display: flex;
   position: absolute;
   top: 250px;
-  margin-left: 80px;
+  margin-left: 50px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -142,5 +143,49 @@ main {
 
 .main-body {
   height: 90vh;
+}
+
+.principal-main-info{
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  padding-left: 370px;
+  padding-top: 20px;
+}
+
+.principal-main-info > * {
+  margin: 0;
+}
+
+.social-network{
+  display: flex;
+  position: relative;
+  height: 20px;
+  bottom: 40px;
+  right: 10px;
+  position: absolute;
+}
+
+.social-network > img {
+  background-color: #f1fcff;
+  display: flex;
+  margin: 8px;
+  padding: 4px;
+  border-radius: 6px;
+  width: 28px;
+  height: 28px;
+  transition: background-color 0.3s;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+}
+
+.social-network > img:hover {
+  background-color: #919191;
 }
 
