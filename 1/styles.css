@@ -18,6 +18,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 14px 40px 0;
+  height: 50px;
 }
 
 span {
@@ -40,7 +41,7 @@ sidebar {
   border-radius: 8px;
   position: absolute;
   transition: width 0.3s;
-  margin: 20px 0 0 40px;
+  margin: 32px 0 0 40px;
   top: 60px;
   background-color: #3a3a3a;
   -webkit-border-radius: 8px;
@@ -81,7 +82,65 @@ sidebar:hover {
 }
 
 
+
 sidebar:hover > hr {
   width: 170px !important;
+}
+
+sidebar:hover ~ main {
+  opacity: 0.3;
+}
+
+main {
+  margin: 30px 100px 0 200px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  height: 100vh;
+  z-index: 0;
+  transition: opacity 0.3s ease;
+  background-color: #3a3a3a;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -ms-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+}
+
+.main-container > * {
+  /* border: 1px solid white; */
+} 
+
+.main-head {
+  /* border: 1px solid white; */
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  background-image: url("./assets/background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.icon-img{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  position: absolute;
+  top: 250px;
+  margin-left: 80px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.icon-img > img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.main-body {
+  height: 90vh;
 }
 
