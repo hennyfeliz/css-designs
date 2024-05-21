@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price Filter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="filter-container">
+      <div class="filter-header">
+        <div class="filter-step">2</div>
+        <div class="filter-options">
+          <button class="filter-option active">Price Filter</button>
+          <button class="filter-option">Colors Filter</button>
+          <button class="filter-option">Brand Filter</button>
+        </div>
+      </div>
+      <div class="filter-body">
+        <div class="range-sliders">
+          <input
+            type="range"
+            min="0"
+            max="50000"
+            step="0.01"
+            id="range-min"
+            value="12340.45"
+          />
+          <input
+            type="range"
+            min="0"
+            max="50000"
+            step="0.01"
+            id="range-max"
+            value="40350.90"
+          />
+        </div>
+        <div class="price-inputs">
+          <div class="price-input">
+            <label for="from-price">From:</label>
+            <input type="number" id="from-price" value="12340.45" step="0.01" />
+          </div>
+          <div class="price-input">
+            <label for="to-price">To:</label>
+            <input type="number" id="to-price" value="40350.90" step="0.01" />
+          </div>
+        </div>
+        <div class="filter-actions">
+          <button id="apply-button">Apply</button>
+          <button id="cancel-button">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
