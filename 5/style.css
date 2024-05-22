@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --dark: #16171d;
+  --grey: #3d3d4b;
+  --font: #aeaeb6;
+  --orange: #b15530;
+  --icon: #8c8da9;
+  --green-back: #3c614d;
+}
+
+* {
+  font-family: "Space Mono", "Azaret Mono", sans-serif;
+}
+.main {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--dark);
+}
+
+.left-side-elements {
+  height: 100%;
+  width: 100px;
+  display: flex;
+  border-right: 1px solid var(--font);
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-side-elements {
+  cursor: pointer;
+  margin: 20px 0;
+}
