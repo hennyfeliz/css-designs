@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --dark: #16171d;
+  --grey: #3d3d4b;
+  --font: #aeaeb6;
+  --orange: #b15530;
+  --icon: #8c8da9;
+  --green-back: #3c614d;
+  --border: #8c8da936;
+}
+
+* {
+  font-family: "Space Mono", "Azaret Mono", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark);
+  color: var(--font);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--grey);
+  border-radius: 10px;
+  width: 240px;
+  height: 500px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header > ion-icon {
+  cursor: pointer;
+  border: 2px solid transparent;
+  padding: 4px;
+  border-radius: 4px;
+  transition: border 0.3s;
+}
+
+.card-header > ion-icon:hover {
+  border: 2px solid var(--border);
+}
+
+.staging-section {
+  cursor: pointer;
+  width: 85%;
+  margin: 14px auto;
+  padding: 0 16px;
+  border-radius: 6px;
+  border: 2px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.staging-section > ion-icon {
+  position: absolute;
+  right: 16px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.connected-api {
+  margin: 14px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.connected-api > p {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.search-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  height: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background-color: var(--grey);
+  color: var(--font);
+}
+
+.search-input > input {
+  margin-left: 10px;
+  width: 100%;
+  background-color: var(--grey);
+  color: var(--font);
+  border: none;
+  outline: none;
+}
+
+.promo-banner {
+  cursor: pointer;
+  margin: 14px 0;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  padding: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.promo-banner {
+  transition: height 0.5s ease;
+  overflow: hidden;
+}
+
+.promo-banner > div:nth-child(2) {
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: 0 4px;
+  transition: border 0.3s;
+}
+
+.promo-banner > div:nth-child(2):hover {
+  border: 2px solid var(--border);
+}
+
+.promo-banner > div:nth-child(1) > div > p {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.promo-banner > div > div,
+.promo-banner > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+
+.promo-banner > div > div > *,
+.promo-banner > div:nth-child(2) > * {
+  margin-right: 10px;
+}
+
+.footer-buttons {
+  position: absolute;
+  bottom: 20px;
+  width: 230px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 6px;
+  border-radius: 6px;
+  background-color: var(--font);
+}
+
+.footer-buttons > ion-icon {
+  cursor: pointer;
+  border: 2px solid transparent;
+  padding: 2px;
+  border-radius: 4px;
+  color: var(--grey);
+  transition: border 0.3s;
+}
+
+.footer-buttons > ion-icon:hover {
+  border: 2px solid var(--grey);
+}
+
+/* DROPDOWN STYLESS */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border-radius: 6px;
+  border: 2px solid var(--border);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--font);
+  width: 100%;
+  background-color: var(--grey);
+  z-index: 1;
+}
+
+.dropdown-content div {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.2s;
+}
+
+.dropdown-content div:hover {
+  background-color: var(--border);
+}
+
+.staging-section {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.staging-section span {
+  margin-right: 10px;
+}
+
+.staging-section ion-icon {
+  vertical-align: middle;
+}
