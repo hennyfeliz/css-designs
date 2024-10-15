@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "azeretmono";
+  src: url("./font/AzeretMono-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "onest";
+  src: url("./font/Onest.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "spacemono";
+  src: url("./font/SpaceMono-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+:root {
+  --bg-body: #d4dcd3;
+  --bg-black: #222221;
+  --bg-green: #abf4a6;
+  --bg-gray: #edf1ed;
+  --bg-purple: #b5a1fd;
+  --bg-white: #ffffff;
+
+  --element_2-1-dropdown-bg: #cfd2ce;
+  --gen-width: 362px;
+}
+
+body {
+  font-family: "spacemono", monospace;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-body);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container1 {
+}
+
+.container2 {
+}
+
+.element1_1 {
+  color: white;
+  background-color: var(--bg-black);
+  border-radius: 32px;
+  padding: 20px;
+  box-sizing: border-box;
+  width: var(--gen-width);
+  height: 244px;
+}
+
+.el_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.el_1 > span {
+  color: gray;
+  border: 2px solid gray;
+  border-radius: 16px;
+  padding: 4px 12px;
+}
+
+.el1_1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.el1_1 > span:nth-child(1) {
+  font-size: 20px;
+}
+
+.el1_1 > span:nth-child(2) {
+  color: gray;
+}
