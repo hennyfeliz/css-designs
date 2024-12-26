@@ -1,0 +1,81 @@
+:root {
+  --light-pink: #fbf8f6;
+  --dark-pink: #f2ebe5;
+  --light-zapote: #efc6c6;
+  --light-yellow: #f7e1c2;
+  --light-purple: #d6d2fd;
+  --light-green: #c3efdb;
+}
+
+body {
+  background-color: var(--light-pink);
+  font-family: inrina-regular, sans-serif;
+}
+
+@font-face {
+  font-family: "inrina-regular";
+  src: url("./assets/fonts/InriaSans-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+.top {
+  height: 40px;
+  width: 100%;
+  border-bottom: 2px solid var(--dark-pink);
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.top > div:nth-child(2),
+.top > div:nth-child(2) > div {
+  width: 450px;
+  height: 90%;
+  border-radius: 7px;
+  background-color: var(--dark-pink);
+  display: flex;
+  padding: 0 14px;
+  align-items: center;
+  gap: 10px;
+}
+
+.top > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.top > div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.data-lucide {
+  width: 12px;
+  height: 12px;
+}
+
+div[data-lucide] {
+  width: 12px;
+  height: 12px;
+}
+
+.main_ {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+
+.main_ > div {
+  border: 1px solid black;
+}
+
+.main_ > div:nth-child(1) {
+  width: 140px;
+  height: 100vh;
+}
