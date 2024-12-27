@@ -1,6 +1,6 @@
 :root {
-  --light-pink: #fbf8f6;
-  --dark-pink: #f2ebe5;
+  --light-pink: #f1d0ff53;
+  --dark-pink: #f1d0ff53;
   --light-zapote: #efc6c6;
   --light-yellow: #f7e1c2;
   --light-purple: #d6d2fd;
@@ -64,18 +64,80 @@ div[data-lucide] {
 }
 
 .main_ {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 100vh;
   padding: 20px;
+  display: grid;
+  grid-template-columns: 0.3fr 3fr 1.2fr; /* Proporciones de ancho */
+  grid-template-rows: 100%; /* La altura será igualada */
+  height: 85vh; /* Altura de toda la ventana */
 }
 
 .main_ > div {
-  border: 1px solid black;
+  /* border: 1px solid #484848; Opcional: Para visualizar las columnas */
 }
 
 .main_ > div:nth-child(1) {
-  width: 140px;
-  height: 100vh;
+  background-color: var(--dark-pink);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px 0;
+}
+
+.main_ > div:nth-child(1) > div:nth-child(2),
+.main_ > div:nth-child(1) > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.main_ > div > div:nth-child(2) > svg,
+.main_ > div > div:nth-child(3) > svg {
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.main_ > div > div:nth-child(3) > img {
+  padding: 10px;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+}
+
+/* center content */
+.main_ > div:nth-child(2) {
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.center-content-skills {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  border: 1px solid black;
+  height: 50px;
+  gap: 10px;
+}
+
+.center-content-skills > div {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  margin: 0 4px;
+  gap: 10px;
+  background-color: var(--dark-pink);
+  height: 100%;
+  padding: 0 20px;
+  border-radius: 30px;
+}
+
+.main_ > div:nth-child(2) > h1 {
+  font-size: 80px;
+  font-weight: 200;
 }
