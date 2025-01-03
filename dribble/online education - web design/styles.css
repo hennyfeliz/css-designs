@@ -141,3 +141,79 @@ div[data-lucide] {
   font-size: 80px;
   font-weight: 200;
 }
+
+.most-popular-text {
+  font-size: 24px;
+  margin: 30px 0;
+}
+
+.popular-container {
+  border: 1px solid black;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.popular-container > div {
+  position: relative;
+  border-radius: 44px;
+  height: 48%;
+  width: 48%;
+}
+
+.popular-container > div > div:nth-child(2) {
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+.popular-container > div:nth-child(1) {
+  background-color: var(--light-zapote);
+}
+
+.popular-container > div:nth-child(2) {
+  background-color: var(--light-yellow);
+}
+
+.popular-container > div:nth-child(3) {
+  background-color: var(--light-purple);
+}
+
+.popular-container > div:nth-child(4) {
+  background-color: var(--light-green);
+}
+
+.students-photoes-container {
+  z-index: 2;
+  border: 1px solid cadetblue;
+  height: 100px;
+  width: 140px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  font-size: 18px;
+}
+
+.card-header > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-header > div:nth-child(2) {
+  background-color: white;
+  padding: 4px 18px;
+  border-radius: 14px;
+}
+
+.stars {
+}
